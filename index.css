@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+#header {
+    background-color: black;
+    height: 60px;
+    text-align: center;
+}
+#header i {
+    color: white;
+    font-size: 60px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+#section1 img {
+    width: 35vw;
+    height: 500px;
+    margin-top: 50px;
+}
+#timetext {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 330px;
+    left: 17.5vw;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+}
+#heart1 {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    top: 330px;
+    left: 17.5vw;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+#heart1 i {
+    color: red;
+    transform: scale(2);
+}
+#heart1 i:hover {
+    animation: heart 1s alternate infinity;
+}
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+#section2 {
+    width: 65vw;
+    padding-top: 50px;
+}
+#section2 h1 {
+    font-size: 40px;
+}
+#section2 p {
+    font-size: 18px;
+    color: grey;
+    line-height: 0.2;
+}
+#section2>p:last-of-type {
+    padding-bottom: 20px;
+}
+#colors {
+    display: flex;
+    flex-direction: row;
+}
+.pa {
+    width: 30px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 0px 10px 20px 10px;
+    border-radius: 5px;
+}
+#colors p:first-of-type {
+    background-color: purple;
+}
+#colors p:nth-of-type(2) {
+    background-color: black;
+}
+#colors p:nth-of-type(3) {
+    background-color: blue;
+}
+#colors p:nth-of-type(4) {
+    background-color: pink;
+}
+#colors p:last-of-type {
+    background-color: red;
+}
+#buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#section2>button {
+    padding: 15px 40px;
+    background-color: gold;
+    margin-top: 40px;
+    margin-left: 5px;
+    border-radius: 7px;
+    outline: none;
+}
+@media screen and (max-width: 760px){
+    section {
+        flex-direction: column;
+    }
+    #text {
+        width: 96vw;
+        text-align: center;
+    }
+    #timetext {
+        left: 48vw;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+    #section1 img {
+        width: 65vw;
+        height: 500px;
+        margin-top: 50px;
+    }
+    #heart1 {
+        font-size: 20px;
+        top: 330px;
+        left: 48vw;
+        transform: translateX(-50%);
+    }
+    #section2 {
+        width: 96vw;
+        padding-left: 10px;
+    }
+    #section2 h1 {
+        font-size: 30px;
+    }
+    #section2 p {
+        font-size: 15px;
+        color: grey;
+        line-height: 0.7;
+    }
+}
